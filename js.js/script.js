@@ -59,8 +59,8 @@ function nextImage() {
   paginationCircls[currentImageMinusOne].classList.add('active');
 
   // Move The images Area First Image
-  imagesAreaFirstImage.style.marginLeft = `-${600 * currentImageMinusOne}px`;
-  console.log(600 * currentImageMinusOne);
+  imagesAreaFirstImage.style.marginLeft = `-${150 * currentImageMinusOne}px`;
+  console.log(150 * currentImageMinusOne);
 })();
 
 
@@ -95,4 +95,4 @@ setInterval(() => {
     // Call Function sliderController();
     sliderController();
   };
-}, 3000);
+}, 4000);

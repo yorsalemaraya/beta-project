@@ -5,14 +5,16 @@ header{
 }
 
 video#Ethiopian_Culture{ 
-display: block;
-background-size: cover;
-object-fit: cover;
-height: 90vh;
-width: 100%;
-margin: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
 }
-
 
 
 .drop-line-center {
@@ -22,7 +24,7 @@ margin: 0;
     height: 60px;
     overflow: hidden;  
     left: 0;
-    right: 0;
+    right: 0; 
   }
   
   .drop-line-center::after {
@@ -38,6 +40,7 @@ margin: 0;
     animation: line-scroll 3s;
     animation-iteration-count: 1;
   }
+
   
   @keyframes line-scroll {
     0% {
@@ -52,5 +55,66 @@ margin: 0;
   }
 
 
+//scroll down button//
+
+  section::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 80%;
+  }
+  section h1 {
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    z-index: 2;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: left;
+  }
+
+  
+  .scroll a {
+    position: absolute;
+    bottom: 20px;
+    left: 38%;
+    z-index: 2;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    color: rgb(184, 176, 176);
+    font : normal 300 ;
+    letter-spacing: .1em;
+    text-decoration: none;
+    transition: opacity .2s;
+
+  }
+  .scroll a:hover {
+    opacity: .5;
+  }
+  
+  
+  #header_scroll a {
+    padding-top: 60px;
+  }
+  #header_scroll a span {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 24px;
+    height: 24px;
+    margin-left: -12px;
+    border-left: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    box-sizing: border-box;
+  }
+  
+  //END scroll down button//
+
+  
 
 /***FIN PHOTO HEADER***/
