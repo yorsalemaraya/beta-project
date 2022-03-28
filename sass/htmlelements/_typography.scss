@@ -1,0 +1,46 @@
+ //----- $FONTS
+ // poppins medium 500, semi bold 600 & work sans regular 400, medium 500
+
+// @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500&display=swap');
+
+.title {
+    font-family: $mate;
+    font-weight: $light;
+    font-size: 48px;
+    color: $color-white;
+    line-height: 100px;
+    margin: 10px;
+}
+
+h2 {
+    font-family: $red-hat-text;
+    font-weight: $regular;
+    font-size: 48px;
+    color: $color-yellow;
+    text-align: right;
+    margin: 50px;
+
+}
+
+h3 {
+    display: relative;
+    font-family: $red-hat-text-italic;
+    font-weight: $regular;
+    font-size: 36px;
+    color: #AB6512;
+    margin : 20px;
+
+
+
+    
+}
+
+.text {
+    font-family: $red-hat-text;
+    font-weight: $light;
+    font-size: 15px;
+    color: $color-dark-brow;
+    line-height: 25px;
+
+}

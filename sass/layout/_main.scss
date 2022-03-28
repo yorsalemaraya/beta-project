@@ -1,0 +1,216 @@
+@media only screen and (max-width: 500px) {
+
+
+/* Main Rules */
+:root{
+    --white-c: #fff;
+    --black-c: #000;
+    --wrapper-shadow-c: rgba(255, 255, 255, 0.219);
+    --buttons-background-c: rgba(255, 255, 255, 0.219);
+  }
+  /* End Main Rules */
+  
+  /* Wrapper */
+  .images-area{
+    width: 100%;
+    height: 150px;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+  }
+  .images-area img{
+    width: 100%;
+    transition: 0.3s cubic-bezier(.79,.03,0,.99);
+    object-fit: cover;
+  }
+  
+  
+  /* Buttons Area  */
+  .buttons-area{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+  }
+  .buttons-area > div{
+    color: var(--white-c);
+    background-color: var(--buttons-background-c);
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+  }
+  /* Buttons | Previous And Next */
+  .buttons-area > div:first-child{
+    border-radius: 0 5px 5px 0;
+    margin-left: -100px;
+  }
+  .buttons-area > div:last-child{
+    border-radius: 5px 0 0 5px;
+    margin-right: -100px;
+  }
+  /* Show The Buttons */
+  .wrapper:hover .buttons-area > div:first-child{
+    margin-left: 0;
+  }
+  .wrapper:hover .buttons-area > div:last-child{
+    margin-right: 0;
+  }
+  .buttons-area div:hover:not(div.disabled){
+    background-color: var(--buttons-active-background-c);
+  }
+  .buttons-area div:not(div.disabled):active{
+    opacity: 0.7;
+  }
+  /* Disabled Button */
+  .buttons-area > div.disabled{
+    cursor: no-drop;
+    opacity: 0.3;
+  }
+  .buttons-area div i{
+    font-size: 70px;
+  }
+  
+  /* Pagination Area */
+  .pagination-area{
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+  }
+  /* Pagination Spans */
+  .pagination-area span{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--white-c);
+    margin-right: 5px;
+    transform: scale(0.5);
+    transition: 0.3s ease-in-out;
+    opacity: 0.4;
+  }
+  /* Current Active Span */
+  .pagination-area span.active{
+    transform: scale(1);
+    opacity: 1;
+  }
+  
+  /* End Wrapper */
+  
+
+.intro {
+    font-family: 'Red Hat Text';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    color: $color-green;
+    margin-left: 20px;
+    margin-top:60px
+}
+
+.text {
+    margin: 30px;
+}
+
+.vertical_line{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Images {
+    width: 200px;
+    height: 478px;
+    object-fit:cover;
+}
+
+.presentation_container{
+display: flex;
+flex-direction: row;
+vertical-align: auto;
+margin: 30px;
+}
+
+.map{
+    width: 180px;
+    height: 200px;
+}
+
+.color_flag {
+    width  : 100%;
+    height : 5px;
+    left: 3px;
+   top: 523.61px;
+   background: rgba(255, 134, 82, 0.2);
+   margin-bottom: 5px;
+
+   }
+
+.color_flag-1 {
+    width  : 100%;
+    height : 5px;
+    left: 3px;
+    top: 523.61px;
+    background: rgba(249, 220, 119, 0.2);
+    margin-bottom: 5px;
+
+   }
+
+   .color_flag-2 {
+    width  : 100%;
+    height : 5px;
+    left: 3px;
+    top: 523.61px;
+    background: rgba(89, 155, 116, 0.2);
+    margin-bottom: 30px;
+}
+
+   .presentation {
+       display: block;
+    position: relative;
+}
+
+.concert_contain{
+    display: flex;
+    flex-direction: row;
+    vertical-align: auto;
+    margin:20px;
+
+}
+
+.dance_contain{
+    display: flex;
+    flex-direction: row;
+    vertical-align: auto;
+    margin:20px;
+}
+
+.cafe_contain{
+    display: flex;
+    flex-direction: row;
+    vertical-align: auto;
+    margin:20px;
+}
+
+
+.food_contain{
+    display: flex;
+    flex-direction: row;
+    vertical-align: auto;
+    margin:20px;
+
+}
+
+
+.flight_picture{
+    width: 100%;
+    height: 200px;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+}

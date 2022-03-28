@@ -1,0 +1,56 @@
+/***PHOTO HEADER***/
+
+header{ 
+    height: 100vh;
+}
+
+video#Ethiopian_Culture{ 
+display: block;
+background-size: cover;
+object-fit: cover;
+height: 90vh;
+width: 100%;
+margin: 0;
+}
+
+
+
+.drop-line-center {
+    position: absolute;
+    margin: auto;
+    width: 1.3px;
+    height: 60px;
+    overflow: hidden;  
+    left: 0;
+    right: 0;
+  }
+  
+  .drop-line-center::after {
+    content: "";
+    display: block;
+    background: black;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    transform: translateY(0%);
+    animation: line-scroll 3s;
+    animation-iteration-count: 1;
+  }
+  
+  @keyframes line-scroll {
+    0% {
+      transform: translateY(-100%);
+    }
+    20% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(0%);
+    }
+  }
+
+
+
+/***FIN PHOTO HEADER***/
