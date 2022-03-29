@@ -6,7 +6,7 @@ html {
 
 body {
   background-color: #F5F5F5;
-  width: 100vw;
+  width: 100%;
   margin: 0;
   padding: 0;
   font-family: "Red Hat Text", light;
@@ -14,7 +14,8 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .subtitle {
@@ -245,7 +246,6 @@ section h1, .subtitle {
 }
 
 /***FIN PHOTO HEADER***/
-/* Main Rules */
 :root {
   --white-c: #fff;
   --black-c: #000;
@@ -253,8 +253,7 @@ section h1, .subtitle {
   --buttons-background-c: rgba(255, 255, 255, 0.219);
 }
 
-/* End Main Rules */
-.intro {
+.italic_contain {
   font-family: "Red Hat Text";
   font-style: italic;
   font-weight: 400;
@@ -297,7 +296,7 @@ section h1, .subtitle {
           box-shadow: inset 0px 4px 4px 10px #F5F5F5;
 }
 
-.parallax {
+.program {
   width: 100vw;
   height: 100%;
   position: relative;
@@ -348,7 +347,13 @@ section h1, .subtitle {
   margin-bottom: 30px;
 }
 
-.presentation {
+.ambessa {
+  display: block;
+  position: relative;
+  width: 100vw;
+}
+
+.colaboracion {
   display: block;
   position: relative;
   width: 100vw;
@@ -456,13 +461,13 @@ section .sorteo {
     margin-right: 60px;
   }
 
-  .intro {
+  .italic_contain {
     margin-left: 50px;
     margin-bottom: 50px;
     font-size: 40px;
   }
 
-  .intro_text_contain {
+  .text_contain {
     width: 100vw;
     height: 70vh;
     overflow: hidden;
