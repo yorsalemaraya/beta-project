@@ -1,108 +1,12 @@
-@media only screen and (max-width: 500px) {
-
-
-/* Main Rules */
 :root{
     --white-c: #fff;
     --black-c: #000;
     --wrapper-shadow-c: rgba(255, 255, 255, 0.219);
     --buttons-background-c: rgba(255, 255, 255, 0.219);
   }
-  /* End Main Rules */
-  
-  /* Wrapper */
-  .images-area{
-    width: 100%;
-    height: 150px;
-    position: relative;
-    display: flex;
-    overflow: hidden;
-  }
-  .images-area img{
-    width: 100%;
-    transition: 0.3s cubic-bezier(.79,.03,0,.99);
-    object-fit: cover;
-  }
-  
-  
-  /* Buttons Area  */
-  .buttons-area{
-    width: 100%;
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
-    display: flex;
-    justify-content: space-between;
-    overflow: hidden;
-  }
-  .buttons-area > div{
-    color: var(--white-c);
-    background-color: var(--buttons-background-c);
-    cursor: pointer;
-    transition: 0.3s ease-in-out;
-  }
-  /* Buttons | Previous And Next */
-  .buttons-area > div:first-child{
-    border-radius: 0 5px 5px 0;
-    margin-left: -100px;
-  }
-  .buttons-area > div:last-child{
-    border-radius: 5px 0 0 5px;
-    margin-right: -100px;
-  }
-  /* Show The Buttons */
-  .wrapper:hover .buttons-area > div:first-child{
-    margin-left: 0;
-  }
-  .wrapper:hover .buttons-area > div:last-child{
-    margin-right: 0;
-  }
-  .buttons-area div:hover:not(div.disabled){
-    background-color: var(--buttons-active-background-c);
-  }
-  .buttons-area div:not(div.disabled):active{
-    opacity: 0.7;
-  }
-  /* Disabled Button */
-  .buttons-area > div.disabled{
-    cursor: no-drop;
-    opacity: 0.3;
-  }
-  .buttons-area div i{
-    font-size: 70px;
-  }
-  
-  /* Pagination Area */
-  .pagination-area{
-    position: absolute;
-    top: 90%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    pointer-events: none;
-  }
-  /* Pagination Spans */
-  .pagination-area span{
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: var(--white-c);
-    margin-right: 5px;
-    transform: scale(0.5);
-    transition: 0.3s ease-in-out;
-    opacity: 0.4;
-  }
-  /* Current Active Span */
-  .pagination-area span.active{
-    transform: scale(1);
-    opacity: 1;
-  }
-  
-  /* End Wrapper */
-  
 
-.intro {
+
+.italic_contain {
     font-family: 'Red Hat Text';
     font-style: italic;
     font-weight: 400;
@@ -110,12 +14,21 @@
     line-height: 32px;
     color: $color-green;
     margin-left: 20px;
-    margin-top:60px
+    margin-top:60px;
 }
 
 .text {
     margin: 30px;
+    opacity: 0;
+    transform:translateY(50px);
+    transition: 1s all ease-in-out;  
 }
+
+.text-appear{
+    opacity: 1;
+    transform: translateY(0px);
+}
+
 
 .vertical_line{
     display: block;
@@ -124,10 +37,20 @@
 }
 
 .Images {
-    width: 200px;
-    height: 478px;
-    object-fit:cover;
+    width: 150px;
+    height: 418px;
+    object-fit: cover;
+    box-sizing: border-box;
+    box-shadow: inset 0px 4px 4px 10px #F5F5F5;
+
+}  
+.program {
+width: 100vw;
+height:100% ;
+position: relative;
+overflow: hidden;
 }
+
 
 .presentation_container{
 display: flex;
@@ -149,7 +72,7 @@ margin: 30px;
    background: rgba(255, 134, 82, 0.2);
    margin-bottom: 5px;
 
-   }
+}
 
 .color_flag-1 {
     width  : 100%;
@@ -158,11 +81,10 @@ margin: 30px;
     top: 523.61px;
     background: rgba(249, 220, 119, 0.2);
     margin-bottom: 5px;
+}
 
-   }
-
-   .color_flag-2 {
-    width  : 100%;
+.color_flag-2 {
+width  : 100%;
     height : 5px;
     left: 3px;
     top: 523.61px;
@@ -170,13 +92,20 @@ margin: 30px;
     margin-bottom: 30px;
 }
 
-   .presentation {
-       display: block;
+   .ambessa {
+    display: block;
     position: relative;
+    width: 100vw;  
+}
+
+.colaboracion {
+    position: relative;
+    width: 100vw;  
 }
 
 .concert_contain{
     display: flex;
+    position: relative;
     flex-direction: row;
     vertical-align: auto;
     margin:20px;
@@ -185,6 +114,7 @@ margin: 30px;
 
 .dance_contain{
     display: flex;
+    position: relative;
     flex-direction: row;
     vertical-align: auto;
     margin:20px;
@@ -192,25 +122,89 @@ margin: 30px;
 
 .cafe_contain{
     display: flex;
+    position: relative;
     flex-direction: row;
     vertical-align: auto;
     margin:20px;
 }
+
 
 
 .food_contain{
     display: flex;
     flex-direction: row;
     vertical-align: auto;
+    justify-content: space-between;
     margin:20px;
+}
 
+.flight_image{
+    width: 50vw; 
+    height:60vh;
+    margin: 40px;
+}
+   
+
+.sorteo{
+width: 100vw; 
+height: 100vh; 
+display: flex;
+flex-direction: row;
+vertical-align: auto;
 }
 
 
-.flight_picture{
-    width: 100%;
-    height: 200px;
-    -o-object-fit: cover;
-    object-fit: cover;
+
+@media only screen and (min-width: 500px) {
+
+
+.Images {
+width: 45vw;
+height: 100vh;
+margin-left: 40px;
+margin-right: 40px;
+}  
+
+.text {
+box-sizing: border-box;
+margin-top: 90px;
+margin-left: 50px;
+margin-bottom: 70px;
+margin-right: 60px;
 }
+
+.italic_contain{
+    margin: 90px;
+    font-size: 40px;
 }
+        
+
+.text_contain{
+width: 100vw;
+height:70vh ;
+overflow: hidden;
+position: relative;
+overflow: hidden;   
+}
+
+.image_taller{
+position: absolute;
+top:0;
+left:0;
+width: 100%;
+bottom: 0;
+right: 0;
+background-position: center;
+background-repeat: no-repeat;
+background-attachment: scroll;
+background-attachment: fixed;
+}
+
+.map{
+    width: 240px;
+    height: 260px;
+}
+} 
+
+
+
