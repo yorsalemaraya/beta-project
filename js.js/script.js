@@ -25,4 +25,3 @@ function scrollAppearAll(){
 
 window.addEventListener('scroll', scrollAppearAll);
 
-
