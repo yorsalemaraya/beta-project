@@ -11,6 +11,28 @@ margin-top: 30px;
 margin-left:30px;
 }
 
+
+.footer{
+background-color:$color-dark-brow;
+width: 100%;
+height:60px;
+display: flex;
+flex-wrap: wrap;
+}
+
+.logo{
+ width: 50px;
+ height: 50px;
+ object-fit: contain;
+ justify-content:end;
+}
+
+.legal_page{
+color: white;
+text-decoration: none;
+   }
+   
+
 @media only screen and (min-width: 500px) {
 
 
