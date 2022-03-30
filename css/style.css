@@ -2,6 +2,7 @@ html {
   width: 100%;
   height: 100%;
   margin: 0;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -77,18 +78,17 @@ h3 {
   h2 {
     font-family: "Red Hat Text", light;
     font-weight: 400;
-    font-size: 120px;
+    font-size: 100px;
     color: #E2B61A;
-    text-align: left;
-    margin-top: 70px;
-    margin-right: 230px;
+    text-align: right;
+    margin-right: 15%;
   }
 
   h3 {
     display: relative;
     font-family: "Red Hat Text", italic;
     font-weight: 400;
-    font-size: 90px;
+    font-size: 100px;
     color: #AB6512;
     margin-top: 120px;
     text-align: center;
@@ -105,6 +105,64 @@ h3 {
 /***PHOTO HEADER***/
 header {
   height: 100vh;
+  width: 100%;
+}
+
+.menu {
+  background-color: #000;
+}
+
+.logo {
+  position: fixed;
+  float: left;
+  margin: 16px 36px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+}
+
+nav ul {
+  list-style: none;
+  background: rgba(0, 0, 0, 0);
+  overflow: hidden;
+  color: #fff;
+  padding: 0;
+  text-align: center;
+  margin: 0;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+nav.black ul {
+  background: #000;
+}
+
+nav ul li {
+  display: inline-block;
+  padding: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+}
+
+.menu-icon {
+  width: 100%;
+  background: #000;
+  text-align: right;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 15px 24px;
+  cursor: pointer;
+  color: #fff;
+  display: none;
 }
 
 video#Ethiopian_Culture {
@@ -354,7 +412,6 @@ section h1, .subtitle {
 }
 
 .colaboracion {
-  display: block;
   position: relative;
   width: 100vw;
 }
@@ -413,35 +470,23 @@ section h1, .subtitle {
   margin: 20px;
 }
 
-.flight_picture {
-  width: 100%;
-  height: 200px;
-  -o-object-fit: cover;
-  object-fit: cover;
+.flight_image {
+  width: 50vw;
+  height: 60vh;
+  margin: 40px;
 }
 
-.invert {
-  color: white;
-}
-
-.buy_btn {
-  width: 129px;
-  height: 28px;
-  background: #55230e;
-  border-radius: 40px;
-  margin: auto;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  text-align: center;
-  color: white;
-}
-
-section .sorteo {
-  background-color: #fff;
-  background-attachment: fixed;
-  display: block;
+.sorteo {
   width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  vertical-align: auto;
 }
 
 @media only screen and (min-width: 500px) {
@@ -462,8 +507,7 @@ section .sorteo {
   }
 
   .italic_contain {
-    margin-left: 50px;
-    margin-bottom: 50px;
+    margin: 90px;
     font-size: 40px;
   }
 
@@ -471,28 +515,21 @@ section .sorteo {
     width: 100vw;
     height: 70vh;
     overflow: hidden;
-    display: block;
-    background: black;
     position: relative;
     overflow: hidden;
   }
 
   .image_taller {
-    width: 100vh;
-    height: 300px;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
     bottom: 0;
     right: 0;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
     background-attachment: scroll;
     background-attachment: fixed;
-    opacity: 0.7;
   }
 
   .map {
@@ -527,6 +564,32 @@ section .sorteo {
   width: 300px;
   margin-top: 30px;
   margin-left: 30px;
+}
+
+.footer {
+  background-color: #341A03;
+  width: 100%;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+.legal_page {
+  color: white;
+  text-decoration: none;
 }
 
 @media only screen and (min-width: 500px) {
