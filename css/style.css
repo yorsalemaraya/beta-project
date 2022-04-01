@@ -60,6 +60,15 @@ h3 {
   line-height: 25px;
 }
 
+h4 {
+  font-family: "Red Hat Text", italic;
+  font-weight: 400;
+  font-size: 35px;
+  color: #AB6512;
+  margin: 20px;
+  z-index: 99;
+}
+
 @media only screen and (min-width: 500px) {
   .subtitle {
     font-family: "Noto Serif TC", normal;
@@ -99,6 +108,14 @@ h3 {
     font-size: 20px;
     color: #341A03;
     line-height: 30px;
+  }
+
+  h4 {
+    font-family: "Red Hat Text", italic;
+    font-weight: 400;
+    font-size: 40px;
+    color: #AB6512;
+    text-align: center;
   }
 }
 /***PHOTO HEADER***/
@@ -264,10 +281,6 @@ section h1, .subtitle {
   height: 418px;
   -o-object-fit: cover;
      object-fit: cover;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  -webkit-box-shadow: inset 0px 4px 4px 10px #F5F5F5;
-          box-shadow: inset 0px 4px 4px 10px #F5F5F5;
 }
 
 .Images-appear {
@@ -432,21 +445,179 @@ section h1, .subtitle {
     background-attachment: fixed;
   }
 
+  .image_taller:hover {
+    opacity: 0.8;
+  }
+  .image_taller:hover figcaption {
+    left: 30%;
+    opacity: 1;
+  }
+
   .map {
     width: 240px;
     height: 260px;
   }
+
+  .child_picture {
+    width: 100vw;
+    height: 50vh;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
 }
-.child_picture {
-  width: 100vw;
-  height: 50vh;
+.info_ticket_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 30px;
+}
+
+.text_ticket {
+  color: #e8e896;
+}
+
+.discover_image {
+  width: 100%;
+  height: 40%;
+  margin-top: 20px;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-.text_ticket {
-  margin: auto;
-  color: #5f5f0e;
+.bullet_point {
+  font-family: "Red Hat Text", light;
+  font-weight: 300;
+  font-size: 15px;
+  color: #341A03;
+}
+
+.buying_btn {
+  padding: 10px 25px;
+  color: #341A03;
+}
+
+.btn {
+  background-color: aqua;
+}
+
+@media only screen and (min-width: 500px) {
+  .info_ticket_container {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+
+  .discover_image {
+    width: 1OOvh;
+    height: 250px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    margin-left: 50px;
+  }
+
+  .bullet_point {
+    font-family: "Red Hat Text", light;
+    font-weight: 300;
+    font-size: 23px;
+    color: #341A03;
+    line-height: 30px;
+    margin-left: 300px;
+    margin-top: 70px;
+  }
+}
+.wrapper {
+  width: 500px;
+  padding: 25px;
+  margin: 25px auto 0;
+  border-radius: 10px;
+}
+
+.wrapper h4 {
+  padding-bottom: 5px;
+  color: #341A03;
+}
+
+.input_group {
+  margin-bottom: 8px;
+  width: 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 5px 0;
+}
+
+.input_box {
+  width: 100%;
+  margin-right: 12px;
+  position: relative;
+}
+
+.input_box:last-child {
+  margin-right: 0;
+}
+
+.input_box .name {
+  padding: 14px 10px 14px 50px;
+  width: 100%;
+  background-color: #fcfcfc;
+  border: 1px solid #0003;
+  outline: none;
+  letter-spacing: 1px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border-radius: 3px;
+  color: #333;
+}
+
+.radio {
+  display: none;
+}
+
+.input_box label {
+  width: 50%;
+  padding: 13px;
+  background-color: #fcfcfc;
+  display: inline-block;
+  text-align: center;
+  border: 1px solid #c0bfbf;
+}
+
+.input_box label:first-of-type {
+  border-top-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-right: none;
+}
+
+.input_box label:last-of-type {
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.radio:checked + label {
+  background-color: #341A03;
+  color: #fff;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.input_box button {
+  width: 100%;
+  background-color: #341A03;
+  border: none;
+  color: #fff;
+  padding: 15px;
+  border-right: 4px;
+  font-size: 16px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  border-radius: 8px;
 }
 
 .card__container {
