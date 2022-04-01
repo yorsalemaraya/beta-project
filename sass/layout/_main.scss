@@ -1,9 +1,3 @@
-:root{
-    --white-c: #fff;
-    --black-c: #000;
-    --wrapper-shadow-c: rgba(255, 255, 255, 0.219);
-    --buttons-background-c: rgba(255, 255, 255, 0.219);
-  }
 
 
 .italic_contain {
@@ -18,7 +12,7 @@
 }
 
 .text {
-    margin: 30px;
+    margin: 40px;
     opacity: 0;
     transform:translateY(50px);
     transition: 1s all ease-in-out;  
@@ -40,28 +34,26 @@
     width: 150px;
     height: 418px;
     object-fit: cover;
-    box-sizing: border-box;
-    box-shadow: inset 0px 4px 4px 10px #F5F5F5;
-
 }  
+
+
+.Images-appear{
+    opacity: 1;
+    transform: translateY(0px);
+}
 .program {
 width: 100vw;
 height:100% ;
-position: relative;
-overflow: hidden;
 }
 
 
 .presentation_container{
-display: flex;
-flex-direction: row;
-vertical-align: auto;
 margin: 30px;
 }
 
 .map{
-    width: 180px;
-    height: 200px;
+    width: 150px;
+    height: 180px;
 }
 
 .color_flag {
@@ -94,27 +86,23 @@ width  : 100%;
 
    .ambessa {
     display: block;
-    position: relative;
     width: 100vw;  
 }
 
 .colaboracion {
-    position: relative;
     width: 100vw;  
 }
 
 .concert_contain{
+
     display: flex;
-    position: relative;
     flex-direction: row;
     vertical-align: auto;
     margin:20px;
-
 }
 
 .dance_contain{
     display: flex;
-    position: relative;
     flex-direction: row;
     vertical-align: auto;
     margin:20px;
@@ -122,12 +110,10 @@ width  : 100%;
 
 .cafe_contain{
     display: flex;
-    position: relative;
     flex-direction: row;
     vertical-align: auto;
     margin:20px;
 }
-
 
 
 .food_contain{
@@ -138,20 +124,85 @@ width  : 100%;
     margin:20px;
 }
 
-.flight_image{
-    width: 50vw; 
-    height:60vh;
-    margin: 40px;
-}
-   
 
-.sorteo{
-width: 100vw; 
-height: 100vh; 
+.text_contain{
+    width: 100vw;
+    height:30vh ;
+    overflow: hidden;
+    position: relative;
+    overflow: hidden; 
+    }
+    
+    .image_taller{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    bottom: 0;
+    right: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-attachment: fixed;
+    } 
+    
+.compras{
 display: flex;
-flex-direction: row;
-vertical-align: auto;
+justify-content: space-evenly;
+  }
+
+
+.has-light-mask {
+  width: 700px;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
 }
+
+.image-effect {
+  img {
+    transform: scale3d(1.2,1.2,1);
+    transition: all 0.8s cubic-bezier(0.7,0,0.3,1);
+  }
+  figcaption {
+    a {
+      text-decoration :none;
+      color: black;
+      font-size: 30px;
+      font-weight: bold;
+    }
+    
+    position: absolute;
+    top:40%;
+    left: 0;
+    opacity: 0;
+    transition: all 0.8s cubic-bezier(0.7,0,0.3,1);
+    &:after {
+      position: absolute;
+      font-size: 15px;
+      top: 14px;
+      right: -39px;
+    }
+
+  }
+  &:hover {
+    img {
+      transform: scale3d(1,1,1);
+      opacity: 0.8;
+        }
+      figcaption {
+        left: 30%;
+        opacity: 1;
+      }
+  }
+}
+.text_sorteo{
+    color: $color-yellow;
+    text-align: right;
+    font-size: 30px;
+    margin-right: 20px;
+    }
+    
 
 
 
@@ -159,14 +210,27 @@ vertical-align: auto;
 
 
 .Images {
-width: 45vw;
+width: 44.6vw;
 height: 100vh;
-margin-left: 40px;
-margin-right: 40px;
+margin-left: 50px;
+margin-right: 50px;
+transform: scale3d(1.02,1.02,1);
+transition: all 0.8s cubic-bezier(0.5,0,0.3,1);
+&:hover {
+      transform: scale3d(1,1,1);
+      opacity: 0.5;
+        }
+      figcaption {
+        left: 30%;
+        opacity: 1;
+      }
 }  
 
+.presentation_container{
+  display: flex;
+
+  }
 .text {
-box-sizing: border-box;
 margin-top: 90px;
 margin-left: 50px;
 margin-bottom: 70px;
@@ -174,37 +238,27 @@ margin-right: 60px;
 }
 
 .italic_contain{
-    margin: 90px;
-    font-size: 40px;
+margin: 90px;
+font-size: 40px;
 }
         
-
 .text_contain{
 width: 100vw;
-height:70vh ;
-overflow: hidden;
-position: relative;
-overflow: hidden;   
+height:50vh ;
 }
 
-.image_taller{
-position: absolute;
-top:0;
-left:0;
-width: 100%;
-bottom: 0;
-right: 0;
-background-position: center;
-background-repeat: no-repeat;
-background-attachment: scroll;
-background-attachment: fixed;
-}
+
 
 .map{
     width: 240px;
     height: 260px;
 }
-} 
 
 
 
+.child_picture{
+    width: 100vw; 
+    height:50vh;
+    object-fit: cover;
+}
+}

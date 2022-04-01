@@ -232,13 +232,6 @@ section h1, .subtitle {
 }
 
 /***FIN PHOTO HEADER***/
-:root {
-  --white-c: #fff;
-  --black-c: #000;
-  --wrapper-shadow-c: rgba(255, 255, 255, 0.219);
-  --buttons-background-c: rgba(255, 255, 255, 0.219);
-}
-
 .italic_contain {
   font-family: "Red Hat Text";
   font-style: italic;
@@ -290,19 +283,12 @@ section h1, .subtitle {
 }
 
 .presentation_container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
   margin: 30px;
 }
 
 .map {
-  width: 180px;
-  height: 200px;
+  width: 150px;
+  height: 180px;
 }
 
 .color_flag {
@@ -493,6 +479,12 @@ section h1, .subtitle {
     opacity: 1;
   }
 
+  .presentation_container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
   .text {
     margin-top: 90px;
     margin-left: 50px;
@@ -675,23 +667,6 @@ section h1, .subtitle {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   border-radius: 8px;
-}
-
-.card__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-.card__container > * {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 25%;
-          flex: 0 0 25%;
-  background-color: slateblue;
-  border-radius: 5px;
-  margin: 5px;
-  padding: 5px;
 }
 
 .newsletter {

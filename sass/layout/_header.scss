@@ -1,47 +1,45 @@
 /***PHOTO HEADER***/
 
-header{ 
-   height: 100vh;
-   width: 100%;
+.header{ 
+   height: 45vh;
+   width: 100vw;
+   object-fit: cover;
+}
+
+.menu-icon {
+  width: 100%;
+  text-align: right;
+  cursor: pointer;
 }
 
 .menu{
-background-color: #000;
+background-color: #251404;
+display: flex;
+opacity: 0.8;
+justify-content: space-between;
 }
 
-
 .logo {
-  position: fixed;
-  float: left;
-  margin: 16px 36px;
-  color: #fff;
-  font-weight: bold;
-  font-size: 24px;
+width: 90px;
+height:90px;
 }
 
 nav {
   position: fixed;
   width: 100%;
+  z-index: 10;
+
 }
 
 nav ul {
-  list-style: none;
-  background: rgba(0,0,0,0);
-  overflow: hidden;
-  color: #fff;
   padding: 0;
-  text-align: center;
   margin: 0;
-  transition: 1s;
-}
-
-nav.black ul {
-  background: #000;
 }
 
 nav ul li {
   display: inline-block;
   padding: 20px;
+
 }
 
 nav ul li a {
@@ -50,17 +48,10 @@ nav ul li a {
   font-size: 20px;
 }
 
-.menu-icon {
-  width: 100%;
-  background: #000;
-  text-align: right;
-  box-sizing: border-box;
-  padding: 15px 24px;
-  cursor: pointer;
-  color: #fff;
+
+nav ul li a .menu {
   display: none;
 }
-
 
 
 video#Ethiopian_Culture{ 
@@ -100,31 +91,10 @@ video#Ethiopian_Culture{
     animation-iteration-count: 1;
   }
 
-  
-  @keyframes line-scroll {
-    0% {
-      transform: translateY(-100%);
-    }
-    20% {
-      transform: translateY(-100%);
-    }
-    100% {
-      transform: translateY(0%);
-    }
-  }
 
 
-//scroll down button//
 
-  section::after {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    content: '';
-    width: 100%;
-    height: 80%;
-  }
-  section h1, .subtitle {
+section h1, .subtitle {
     position: absolute;
     top: 40%;
     left: 40%;
@@ -145,46 +115,6 @@ video#Ethiopian_Culture{
     color: #fff;
     text-align: center;
   }
-
-  
-  .scroll a {
-    position: absolute;
-    bottom: 20px;
-    left: 38%;
-    z-index: 2;
-    -webkit-transform: translate(0, -50%);
-    transform: translate(0, -50%);
-    color: rgb(184, 176, 176);
-    font : normal 300 ;
-    letter-spacing: .1em;
-    text-decoration: none;
-    transition: opacity .2s;
-
-  }
-  .scroll a:hover {
-    opacity: .5;
-  }
-  
-  
-  #header_scroll a {
-    padding-top: 60px;
-  }
-  #header_scroll a span {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    width: 24px;
-    height: 24px;
-    margin-left: -12px;
-    border-left: 1px solid #fff;
-    border-bottom: 1px solid #fff;
-    -webkit-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-    box-sizing: border-box;
-  }
-  
-  //END scroll down button//
-
   
 
 /***FIN PHOTO HEADER***/

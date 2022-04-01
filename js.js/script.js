@@ -1,12 +1,3 @@
-var swiper = new Swiper(".mySwiper", {
-  navigation: true,
-  pagination: true,
-});
-
-var rellax = new Rellax('.rellax');
-
-
-
 
 const $elements = document.querySelectorAll('.text');
 const $broswerScreenPosition = window.innerHeight;
@@ -22,6 +13,6 @@ function scrollAppearAll(){
   })
 }
 
-
 window.addEventListener('scroll', scrollAppearAll);
+
 

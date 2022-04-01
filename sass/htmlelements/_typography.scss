@@ -17,6 +17,7 @@ h1 {
     color: $color-white;
     line-height: 100px;
     margin: 10px;
+
 }
 
 h2 {
@@ -35,6 +36,7 @@ h3 {
     font-size: 36px;
     color: #AB6512;
     margin : 20px;
+    z-index :99;
    
 }
 
@@ -45,6 +47,15 @@ h3 {
     line-height: 25px;
 }
 
+h4 {
+    font-family: $red-hat-text-italic;
+    font-weight: $regular;
+    font-size: 35px;
+    color: #AB6512;
+    margin : 20px;
+    z-index :99;
+   
+}
 
 @media only screen and (min-width: 500px) {
 
@@ -73,15 +84,11 @@ h2 {
 }
 
 h3 {
-    display: relative;
     font-family: $red-hat-text-italic;
     font-weight: $regular;
     font-size: 100px;
     color: #AB6512;
     margin-top : 120px;
-    text-align: center;
-
-   
 }
 
 .text {
@@ -90,5 +97,13 @@ h3 {
     font-size: 20px;
     color: $color-dark-brow;
     line-height: 30px;
+}
+
+h4 {
+    font-family: $red-hat-text-italic;
+    font-weight: $regular;
+    font-size: 40px;
+    color: #AB6512;
+    text-align: center;;   
 }
 }
