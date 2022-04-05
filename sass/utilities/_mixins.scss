@@ -1,6 +1,5 @@
-//mixim para tamaño desktop header
 @mixin size-desktop-header{
-    @media (min-width:900px){
+    @media (min-width:1000px){
         .logotipo-principal{
             width:200px;
         }
