@@ -4,19 +4,24 @@
    height: 45vh;
    width: 100vw;
    object-fit: cover;
+
 }
 
 .menu-icon {
   width: 100%;
   text-align: right;
   cursor: pointer;
+
 }
 
 .menu{
-background-color: #251404;
 display: flex;
 opacity: 0.8;
 justify-content: space-between;
+width: 100vw;
+background-color: #251404;
+align-items: center;
+
 }
 
 .logo {
@@ -31,27 +36,33 @@ nav {
 
 }
 
+nav.black ul {
+  background: #000;
+}
+
 nav ul {
+  list-style: none;
+  overflow: hidden;
+  color: #fff;
   padding: 0;
+  text-align: center;
   margin: 0;
+  transition: 1s;
 }
 
 nav ul li {
   display: inline-block;
-  padding: 20px;
+  padding: 23px;
 
 }
 
 nav ul li a {
   text-decoration: none;
   color: #fff;
-  font-size: 20px;
+  font-size: 30px;
 }
 
 
-nav ul li a .menu {
-  display: none;
-}
 
 
 video#Ethiopian_Culture{ 
@@ -118,3 +129,63 @@ section h1, .subtitle {
   
 
 /***FIN PHOTO HEADER***/
+
+
+nav ul li {
+  display: inline-block;
+  padding: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+}
+
+/*Menu icon CSS*/
+.menu-icon {
+  width: 100%;
+  opacity: 0.8;
+  text-align: right;
+  box-sizing: border-box;
+  padding: 15px 24px;
+  cursor: pointer;
+  color: #fff;
+  display: none;
+  background-color: #251404;
+
+
+}
+
+/*Responsive design CSS*/
+@media(max-width: 580px) {
+  .logo {
+    position: fixed;
+    top: 2px;
+  }
+  
+  nav ul {
+    max-height: 0px;
+  }
+  
+  nav.black ul {
+    background: #000;
+  }
+  
+  .showing {
+    max-height: 20em;
+  }
+
+  .menu    {
+  text-align: center;
+}
+  nav ul li {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 24px 0px;
+  }
+  
+  .menu-icon {
+    display: block;
+  }
+}
